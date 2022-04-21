@@ -12,3 +12,4 @@ FWV的姿态角通常都是通过角动量积分得到的，测量误差会累�
 ### 我们仿真平台框架：
 ![cartpole](https://cdn.jsdelivr.net/gh/Yan-Jifu/gitnote-images/images/gui.png)
 我们需要把Drone type设置为fwv和集群的fwv
+注意分工
