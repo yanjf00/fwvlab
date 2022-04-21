@@ -10,6 +10,5 @@ FWV的姿态角通常都是通过角动量积分得到的，测量误差会累�
 我们接下来要实现这个建模，一方面要学习FWV的相关**运动学和动力学**知识，另一方面要学会**欧拉-拉格朗日法**的模型建立。编队控制的状态估计利用了**神经网络**的相关知识。论文的特色更重要的在于发现了平动和转动的**耦合**特性。  
 
 ### 我们仿真平台框架：
-![cartpole](https://cdn.jsdelivr.net/gh/Yan-Jifu/gitnote-images/images/gui.png)
+![gui](https://cdn.jsdelivr.net/gh/Yan-Jifu/gitnote-images/images/gui.png)
 我们需要把Drone type设置为fwv和集群的fwv
-注意分工
