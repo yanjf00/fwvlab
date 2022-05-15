@@ -1,5 +1,5 @@
 # fwvlab
-### 如何进行开发？
+## 如何进行开发？
 目前我们共同开发的项目在远端的仓库为<https://github.com/Yan-Jifu/fwvlab.git>，里面有两个分支，master & develop。  
 请开发者在开发自己的部分时，基于develop分支进行。用法是：
 ```
@@ -18,3 +18,7 @@ git push origin develop
 ```
 
 1. 如果遇到远端develop分支更新，则注意可能会有合并上的冲突，这时候应当消除冲突。特别是两个branch操作1个文件时。这时应当进行编辑，把冲突部分删去再重新提交。
+
+## 开发日志
+- v0.1：生成了简单的 FWV的躯干和前缘框架，通过 freecad 搭建了躯干的模型，导入到simscape中，加上关节和框架以及 tf 变换。成功建出了一个骨架模型。
+- v0.2：在空气动力学未知的情况（即没有加翅膀）下，首先让其以较小的高度平稳落在起降平台上。针对 simscape multibody 穿模的问题，使用了 Simscape Multibody Contact Forces Library，简化为下落角点单独形成的球体与平面碰撞问题，将ode45更改为刚性问题更简单的 ode15s，大大减少了运行时间。
