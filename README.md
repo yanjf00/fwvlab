@@ -22,3 +22,4 @@ git push origin develop
 ## 开发日志
 - v0.1：生成了简单的 FWV的躯干和前缘框架，通过 freecad 搭建了躯干的模型，导入到simscape中，加上关节和框架以及 tf 变换。成功建出了一个骨架模型。
 - v0.2：在空气动力学未知的情况（即没有加翅膀）下，首先让其以较小的高度平稳落在起降平台上。针对 simscape multibody 穿模的问题，使用了 Simscape Multibody Contact Forces Library，简化为下落角点单独形成的球体与平面碰撞问题，将ode45更改为刚性问题更简单的 ode15s，大大减少了运行时间。
+- v0.3：弃用了 Simscape Multibody Contact Forces Library，利用焊接关节的mode特性，起始位置让 FWV 固连在基坐标系上，然后当上升力超过本身重力之后，焊接关节解锁； FWV坠落至地面后仿真结束。
