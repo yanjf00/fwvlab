@@ -7,3 +7,22 @@
 2. 速度的表达和变换；
 3. 动力学建模；
 4. 如何积分；
+
+## 动力学建模
+首先分析论文用到的 FWMAV 类：【核心】  
+关于每个翅膀的参数如下所示：
+| Symbols | Meanings | Interpretation|
+|----|----|----|
+|$k$|index of wing| left(0) or right(1)|
+||wing_length|
+|mean_chord|
+||r33|
+||r22|
+||r11|
+||r00|
+||z_cp2|
+||z_cp1|
+||z_cp0|
+||z_rd|
+||left_shoulder_width|
+||stroke_plane_offset|
