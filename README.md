@@ -24,6 +24,7 @@ git push origin develop
 
 - 2022-6-15：Defly Book chapter 5: Introduction to Fixed and Flapping
 Wing Aerodynamics --> COMPLETE
+- 2022-7-2~2022-7-19：基于论文的刚体模型和空气动力学搭建完毕（暂时没有变压心和rotation torque, damping torque，只给了quasi-state 的力），给予50Hz的正弦信号在stroke joint上。扑翼飞起来了（无重力下）而且歪斜、不稳定。
 ## 开发日志
 - v0.1：生成了简单的 FWV的躯干和前缘框架，通过 freecad 搭建了躯干的模型，导入到simscape中，加上关节和框架以及 tf 变换。成功建出了一个骨架模型。
 - v0.2：在空气动力学未知的情况（即没有加翅膀）下，首先让其以较小的高度平稳落在起降平台上。针对 simscape multibody 穿模的问题，使用了 Simscape Multibody Contact Forces Library，简化为下落角点单独形成的球体与平面碰撞问题，将ode45更改为刚性问题更简单的 ode15s，大大减少了运行时间。
