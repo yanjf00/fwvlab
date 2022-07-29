@@ -1,4 +1,3 @@
-set_param('fwv','ModelReferenceMinAlgLoopOccurrences','On');
 rp = 0.08;
 cp = 0.02;
 R=0.14;
@@ -13,9 +12,9 @@ r11 = double(int(x*f,[0,1]));
 r22 = double(int(x^2*f,[0,1]));
 r33 = double(int(x^3*f,[0,1]));
 r_cp = Rw*r33/r22;
-z2 = double(int(x^2*f^2,[0,1]));
-z1 = double(int(x*f^2,[0,1]));
-z0 = double(int(f^2,[0,1]));
+z22 = double(int(x^2*f^2,[0,1]));
+z11 = double(int(x*f^2,[0,1]));
+z00 = double(int(f^2,[0,1]));
 zrd = double(int(f^4,[0,1]));
 A_L = 1.8;
 C_D0 = 0.45;
