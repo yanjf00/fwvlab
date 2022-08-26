@@ -1,0 +1,1 @@
+plot3(out.p(:,1),out.p(:,2),out.p(:,3))hold onplot3(0.5*cos(pi/2*out.t),0.5*sin(pi/2*out.t),0*out.t+1);
