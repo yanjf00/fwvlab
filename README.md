@@ -20,7 +20,7 @@ git push origin develop
 1. 如果遇到远端develop分支更新，则注意可能会有合并上的冲突，这时候应当消除冲突。特别是两个branch操作1个文件时。这时应当进行编辑，把冲突部分删去再重新提交。
 
 ## 使用说明
-安装不低于2020b的matlab版本，需配套Simulink、simscape、simscape multibody和control system toolbox。
+安装不低于2021b的matlab版本，需配套Simulink、simscape、simscape multibody和control system toolbox。
 
 ### 个体的镇定和轨迹跟踪
 直接运行`fwv_modified.slx`即可。
