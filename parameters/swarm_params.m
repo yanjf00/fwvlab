@@ -17,7 +17,8 @@ q0 = [0.5 0 0 0.2;
 %  With respect to acceleration, please read or edit in file 'f_a_0.m'.
 % ---------------------------------------
 p0_0=[0;0;0];   % desired initial position
-v0_0=[1/3;0;1];   % desired initial velocity
+% v0_0=[1/3;0;1];   % desired initial velocity
+v0_0=[0;0;0];   % desired initial velocity
 
 % ---------------------------------------
 %  adjectory matrix

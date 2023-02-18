@@ -14,4 +14,6 @@ for i=1:Num
     
     set_param(sprintf('formation/FWV%d/Visualization/To Workspace',i),'VariableName',sprintf('p%d',i));
     set_param(sprintf('formation/FWV%d/Visualization/To Workspace1',i),'VariableName',sprintf('pd%d',i));
+    set_param(sprintf('formation/FWV%d/Visualization/To Workspace2',i),'VariableName',sprintf('psi%d',i));
+    set_param(sprintf('formation/FWV%d/Visualization/To Workspace3',i),'VariableName',sprintf('psid%d',i));
 end

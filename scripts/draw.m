@@ -1,0 +1,1 @@
+p= out.p;pd = out.pd;t = out.t;plot3(p(:,1),p(:,2),p(:,3));hold onplot3(pd(:,1),pd(:,2),pd(:,3));legend('Response Path','Expected Path');xlabel('X(m)');ylabel('Y(m)');zlabel('Z(m)');grid on;figure;grid off;subplot(3,1,1);plot(t,p(:,1)-pd(:,1));subplot(3,1,2);plot(t,p(:,2)-pd(:,2));subplot(3,1,3);plot(t,p(:,3)-pd(:,3));clear("t")clear("p")clear("pd")

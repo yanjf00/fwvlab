@@ -1,0 +1,10 @@
+clear, clc;
+close all
+
+% ture: agents example; false: single agent example
+IS_FORMATION = false;
+
+% mode:1 hover; mode:2 forward; mode3 cruise.
+SINGLE_MODE = 1;
+
+run("main.m")
