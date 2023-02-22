@@ -12,8 +12,6 @@ for i=1:Num
     set_param(sprintf('formation/FWV%d/Body',i),'p0',sprintf('[%f,%f,%f]',q0(i,1),q0(i,2),q0(i,3)));
     set_param(sprintf('formation/FWV%d/Body',i),'psi0',string(q0(i,4)));
     
-    set_param(sprintf('formation/FWV%d/Visualization/To Workspace',i),'VariableName',sprintf('p%d',i));
-    set_param(sprintf('formation/FWV%d/Visualization/To Workspace1',i),'VariableName',sprintf('pd%d',i));
-    set_param(sprintf('formation/FWV%d/Visualization/To Workspace2',i),'VariableName',sprintf('psi%d',i));
-    set_param(sprintf('formation/FWV%d/Visualization/To Workspace3',i),'VariableName',sprintf('psid%d',i));
+    set_param(sprintf('formation/FWV%d/Visualization/To Workspace',i),'VariableName',sprintf('q%d',i));
+    set_param(sprintf('formation/FWV%d/Visualization/To Workspace1',i),'VariableName',sprintf('qd%d',i));
 end
