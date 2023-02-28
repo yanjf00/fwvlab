@@ -31,6 +31,7 @@ plot3([q_all(endi,2*4+1), q_all(endi,0*4+1),q_all(endi,3*4+1)], ...
    [q_all(endi,2*4+3), q_all(endi,0*4+3),q_all(endi,3*4+3)], '--',"LineWidth", 1.5,"Color",[0.5 0.5 0.5]);
 hold off
 zlim([0,3]);
+ylim([-2,2]);
 xlabel("x(m)");
 ylabel("y(m)");
 zlabel("z(m)");
@@ -44,7 +45,7 @@ for iq=1:4
     %     plot(t,q_all(:,3*i+1),t,qd_all(:,3*i+1));
     
     for i=0:4
-        plot(t,q_all(:,4*i+iq)-qd_all(:,4*i+iq),"LineWidth", 1.5,"Color",colors_traj(i+1,:));
+        plot(t,q_all(:,4*i+iq)-qd_all(:,4*i+iq),"LineWidth", 1,"Color",colors_body(i+1,:));
         hold on
     end
     ylabel(ylbs(iq));
@@ -62,7 +63,7 @@ for iq=1:4
     %     plot(t,q_all(:,3*i+1),t,qd_all(:,3*i+1));
     
     for i=0:4
-        plot(t,est_err(:,4*i+iq),"LineWidth", 1.5,"Color",colors_traj(i+1,:));
+        plot(t,est_err(:,4*i+iq),"LineWidth", 1,"Color",colors_body(i+1,:));
         hold on
     end
     ylabel(ylbs(iq));
