@@ -21,12 +21,14 @@ git push origin develop
 
 ## 使用说明
 安装不低于2021b的matlab版本，需配套Simulink、simscape、simscape multibody和control system toolbox。
+运行 setup.m
+
 
 ### 个体的镇定和轨迹跟踪
-直接运行`fwv_modified.slx`即可。
-### 群体的轨迹跟踪
-直接运行`swarm.m`即可。
+将 setup.m 中的 IS_FORMATION 设置为 false; 可以调整 SINGLE_MODE 为 1: 镇定模式； 2: 前飞模式；3: 巡航模式。
 
+### 群体的轨迹跟踪
+将 setup.m 中的 IS_FORMATION 设置为 true；
 ## 实时贡献
 
 - 2022-6-15：Defly Book chapter 5: Introduction to Fixed and Flapping
