@@ -1,18 +1,18 @@
 %  Entrance of the platform
 
 % single FWV or formation
-
+%%
 addpath("models");
 addpath("parameters");
 addpath("scripts");
 run("sim_params");
 run("ctrl_params");
-
+%%
 if ~exist("IS_FORMATION","var") || IS_FORMATION
     run("swarm_params");
     run("add_fwv");    
     try
-        out = sim("formation.slx",'Stoptime','16');
+        out = sim("formation.slx",'Stoptime','24');
         
     catch
         bdclose('formation.slx');
@@ -23,7 +23,7 @@ if ~exist("IS_FORMATION","var") || IS_FORMATION
 else
     % debug with the single fwv
     try
-        out = sim('fwv_modified.slx','Stoptime','10');
+        out = sim('fwv_modified.slx','Stoptime','20');
     catch
         bdclose('fwv_modified.slx');
         exit;

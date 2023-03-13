@@ -16,9 +16,9 @@ q0 = [0.5 0 0 0.2;
 %  desired formation trajectory
 %  With respect to acceleration, please read or edit in file 'f_a_0.m'.
 % ---------------------------------------
-p0_0=[0;0;0];   % desired initial position
+p0_0=[0;0;1;0];   % desired initial position
 % v0_0=[1/3;0;1];   % desired initial velocity
-v0_0=[0;0;0];   % desired initial velocity
+v0_0=[0;0;0;0];   % desired initial velocity
 
 % ---------------------------------------
 %  adjectory matrix
@@ -38,13 +38,20 @@ is_0_access = [1 0 0 1 0];
 %  With respect to shape transformation that might happen, please read
 %  or edit in file 'rel_v.m'
 % ----------------------------------------
+% delta0_i0 = [
+%     0,0,0.4,0;
+%     -0.6,-0.4,0.2,0;
+%     -0.6,0.4,0.2,0;
+%     -1.2,-0.8,0,0;
+%     -1.2,0.8,0,0
+%     ];  % the initial shape destination
 delta0_i0 = [
-    0,0,0.4,0;
-    -0.6,-0.4,0.2,0;
-    -0.6,0.4,0.2,0;
-    -1.2,-0.8,0,0;
-    -1.2,0.8,0,0
+    0,0,0,0;
+    0.5,0.5,0,pi/4;
+    0.5,-0.5,0,-pi/4;
+    -0.5,0.5,0,3*pi/4;
+    -0.5,-0.5,0,-3*pi/4
     ];  % the initial shape destination
 
-k1=20;  % converge rate
-k2=15;  % damping rate
+k1=12;  % converge rate
+k2=6;  % damping rate

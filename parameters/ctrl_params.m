@@ -6,5 +6,5 @@ adps = 2;    % quasi-sliding mode control sigma
 gh = 1;      % sliding mode control h
 gd = 5/7;    % sliding mode control p/q
 % inner loop controller parameters
-il.Kp = [0.2 0.4 0.2];
+il.Kp = [0.2 0.4 0.3];
 il.Kd = [0.03 0.08 0.05];
